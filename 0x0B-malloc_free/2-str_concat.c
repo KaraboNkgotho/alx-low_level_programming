@@ -19,8 +19,7 @@ char *str_concat(char *str1, char *str2)
 
 	if (str2 == NULL)
 		str2 = "";
-		x = 0;
-		y = 0;
+		x = y = 0;
 	while (str1[x] != '\0')
 		x++;
 
