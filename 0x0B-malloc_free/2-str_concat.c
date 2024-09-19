@@ -17,16 +17,17 @@ char *str_concat(char *str1, char *str2)
 	if (str1 == NULL)
 		str1 = "";
 
-	if (str2 == NULL)
-		str2 = "";
+		if (str2 == NULL)
+			str2 = "";
+
 		x = y = 0;
-	while (str1[x] != '\0')
-		x++;
+			while (str1[x] != '\0')
+				x++;
 
-	while (str2[y] != '\0')
-		y++;
+			while (str2[y] != '\0')
+				y++;
 
-	c = malloc(sizeof(char) * (x + y + 1));
+			c = malloc(sizeof(char) * (x + y + 1));
 
 	if (c == NULL)
 		return (NULL);
